@@ -3,7 +3,7 @@ const tweets = [
     id: '1',
     user:{
       id: 'u1',
-      username: 'catman',
+      username: 'catman_',
       name: 'cute cat',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuqI35mONQc0brx4iHoiHSW5J0ZTHnn0fOvw&usqp=CAU',
     },

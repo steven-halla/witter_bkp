@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from "react-native";
 import LeftContainer from './LeftContainer';
 import MainContainer from './MainContainer';
-
+import styles from "./styles";
 import { TweetType } from '../../types';
 
 export type TweetProps = {
@@ -10,9 +10,9 @@ export type TweetProps = {
 }
 
 const Tweet = ({ tweet }: TweetProps) => (
-  <View>
-     <LeftContainer user={tweet.user}  />
-     <MainContainer tweet={tweet} />
+  <View style={ styles.container }>
+     <LeftContainer user={ tweet.user }  />
+     <MainContainer tweet={ tweet } />
   </View>
 )
 

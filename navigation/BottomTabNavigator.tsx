@@ -10,9 +10,10 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../screens/TabOneScreen';
+import HomeScreen from '../screens/HomeScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { BottomTabParamList, HomeNavigatorParamList, TabTwoParamList } from '../types';
+import ProfilePicture from "../components/ProfilePicture";
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -73,22 +74,28 @@ function HomeNavigator() {
     <TabOneStack.Navigator>
       <TabOneStack.Screen
         name="HomeScreen"
-        component={TabOneScreen}
+        component={HomeScreen}
         options={{
           headerRightContainerStyle: {
-            marginRight: 10,
+            marginRight: 15,
+          },
+          headerLeftContainerStyle: {
+            marginLeft: 15,
           },
           headerTitle: () => (
             <Ionicons size={30} name={"logo-twitter"} color={Colors.light.tint} />
           ),
           headerRight: () => (
             <MaterialCommunityIcons name={"star-four-points-outline"} size={30} color={Colors.light.tint} />
+          ),
+          headerLeft: () => (
+            <ProfilePicture size={40} image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6fH4WcqPLntpPILC1Ag-_D7dkrljytz9iNg&usqp=CAU'} />
           )
         }}
       />
     </TabOneStack.Navigator>
   );
-};
+}
 
 const TabTwoStack = createStackNavigator<TabTwoParamList>();
 

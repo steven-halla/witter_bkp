@@ -1,28 +1,47 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    marginHorizontal: 10,
+    width: "80%"
+  },
   tweetHeaderContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    backgroundColor: 'blue',
+    flexDirection: "row",
+    justifyContent: "space-between"
   },
   tweetHeaderNames: {
-    flexDirection: 'row',
+    flexDirection: "row"
   },
   name: {
-    marginHorizontal: 5,
-    fontWeight: 'bold',
+    marginRight: 5,
+    fontWeight: "bold"
   },
   username: {
     marginHorizontal: 5,
-    color: 'grey',
+    color: "grey"
   },
   createdAt: {
     marginHorizontal: 5,
+    color: "grey"
   },
-  moreIcon: {
-    alignSelf: 'flex-end',
+  moreIcon: {},
+  contentContainer: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  content: {
+    marginTop: 5,
+    lineHeight: 18,
+  },
+  image: {
+    marginVertical: 10,
+    height: 200,
+    resizeMode: "cover",
+    borderRadius: 15,
+    overflow: "hidden"
   }
 });
 

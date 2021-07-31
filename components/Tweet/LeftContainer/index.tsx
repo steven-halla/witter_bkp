@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from "react-native";
 import { UserType } from "../../../types";
+import styles from "./styles";
 import ProfilePicture from "../../ProfilePicture";
 
 export type LeftContainerProps = {
@@ -9,7 +10,7 @@ export type LeftContainerProps = {
 }
 
 const LeftContainer = ({ user }: LeftContainerProps) => (
-  <View>
+  <View style={styles.container}>
      <ProfilePicture image={ user.image} size={75} />
   </View>
 )

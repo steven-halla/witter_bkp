@@ -5,6 +5,7 @@
 
 export type RootStackParamList = {
   Root: undefined;
+  NewTweet: undefined;
   NotFound: undefined;
 };
 
@@ -40,3 +41,5 @@ export type TweetType = {
   numberOfRetweets?: number,
   numberOfLikes?: number,
 };
+
+

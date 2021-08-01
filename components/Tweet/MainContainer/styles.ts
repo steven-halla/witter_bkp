@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "column",
   },
+
   content: {
     marginTop: 5,
     lineHeight: 18,
@@ -42,7 +43,8 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     borderRadius: 15,
     overflow: "hidden"
-  }
+  },
+
 });
 
 export default styles;

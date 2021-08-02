@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from "react";
 import { SafeAreaView, StyleSheet, TextInput, TouchableOpacity } from "react-native";
 
 import EditScreenInfo from '../components/EditScreenInfo';
@@ -9,10 +9,20 @@ import ProfilePicture from "../components/ProfilePicture";
 
 
 
+
 export default function NewTweetScreen() {
 
+
+  const [tweet, setTweet] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+
+
   const onPostTweet = () => {
-    console.warn(  "onPostTweet");
+    console.log(`Posting the tweet: ${tweet}
+    Image: ${imageUrl}`);
+
+
+
   }
 
   return (
@@ -27,11 +37,16 @@ export default function NewTweetScreen() {
             <ProfilePicture image={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuqI35mONQc0brx4iHoiHSW5J0ZTHnn0fOvw&usqp=CAU'}/>
             <View style={styles.inputsContainer}>
               <TextInput
+                value={tweet}
+                onChangeText={(value ) => setTweet(value)}
+                multiline={true}
                 numberOfLines={3}
                 style={styles.tweetInput}
                 placeholder={"What's happening?"}
               />
               <TextInput
+                value={imageUrl}
+                onChangeText={(value) => setImageUrl(value)}
                 style={styles.imageInput}
                 placeholder={"image url(optional)"}
               />
@@ -77,6 +92,7 @@ const styles = StyleSheet.create({
   tweetInput: {
     height: 100,
     maxHeight: 300,
+    fontSize: 18,
   },
   imageInput: {
 

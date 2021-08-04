@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "witterae57fde3": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

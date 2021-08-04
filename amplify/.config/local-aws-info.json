@@ -1,0 +1,12 @@
+{
+  "dev": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/Users/steven/.amplify/awscloudformation/QircX823FE"
+  },
+  "witter": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/Users/steven/.amplify/awscloudformation/I9NPLY3iPX"
+  }
+}

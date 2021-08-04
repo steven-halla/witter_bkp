@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "witter",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-witter-witter-155649-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/7312959b7ea12f3bb2e3f2cbe22844d5e6415d2f"
+}
